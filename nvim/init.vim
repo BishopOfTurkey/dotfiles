@@ -29,7 +29,7 @@ au FocusGained,BufEnter * checktime
 
 
 
-" Leader key is '\' be default
+" Leader key is '\' by default
 nmap <leader>w :w!<cr>
 
 " Minimum area around cursor
@@ -47,4 +47,30 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
+try
+    colorscheme desert
+catch
+endtry
 
+
+set background=dark
+
+set noswapfile
+
+" Use spaces
+set expandtab
+set smarttab
+
+set shiftwidth=4
+set tabstop=4
+
+" Line break is 500 Chars
+set lbr
+set tw=500
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" Pressing leader s s will toggle spellcheck
+map <leader>ss :setlocal spell!<cr>
