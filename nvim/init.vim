@@ -4,6 +4,8 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'preservim/nerdtree'
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 
